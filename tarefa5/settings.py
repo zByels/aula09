@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-^plni5&#dj#ki_ws7!pig5++y0h&tb7p2kgja%viqmdo!6wg#^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['https://aula09-6oid.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -65,6 +65,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'servestatic.middleware.ServeStaticMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
